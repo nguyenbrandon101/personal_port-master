@@ -9,8 +9,8 @@ const Newproj = () => {
             <div className='projects-grid'>
                 <div className='new-projects'>
                     <img src={require('./netlix.png')} />
-                    <div class="overlay">
-                        <div class="info">
+                    <div className="overlay">
+                        <div className="info">
                             <h1>Netflix Clone</h1>
                         </div>
                     </div>
@@ -22,8 +22,8 @@ const Newproj = () => {
 
                 <div className='new-projects'>
                     <img src={require('./weathertodo.png')} />
-                    <div class="overlay">
-                        <div class="info">
+                    <div className="overlay">
+                        <div className="info">
                             <h1>Weather To-Do</h1>
                         </div>
                     </div>
@@ -34,8 +34,8 @@ const Newproj = () => {
                 </div>
                 <div className='new-projects'>
                     <img src={require('./dino.png')} />
-                    <div class="overlay">
-                        <div class="info">
+                    <div className="overlay">
+                        <div className="info">
                             <h1>Dino Game</h1>
                         </div>
                     </div>
@@ -46,8 +46,8 @@ const Newproj = () => {
                 </div>
                 <div className='new-projects'>
                     <img src={require('./todopic.png')} />
-                    <div class="overlay">
-                        <div class="info">
+                    <div className="overlay">
+                        <div className="info">
                             <h1>To-Do List 1.0</h1>
                         </div>
                     </div>
