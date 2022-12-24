@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap');
+
+:root {
+  --primary: white;
+  --secondary: rgb(103, 144, 241);
+}
+/* Navbar */
+body {
+  font-family: 'Playfair Display', serif;
+
+}
+nav {
+  min-width: 670px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  height: 7rem;
+  width: 100%;
+  border-bottom: 1px solid #f2f1f1;
+}
+
+ul li  {
+  font-weight: bold;
+  display: inline-block;
+  padding-right: 3rem;
+  font-size:25px;
+}
+
+.resume {
+  text-decoration: none;
+  font-family: 'Playfair Display', serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  padding: 0.5rem 1.5rem;
+  border: 2px solid var(--secondary);
+  text-decoration: none;
+  margin-right: 1rem;
+  font-size: 25px;
+  color: white;
+  background-color: var(--secondary);
+}
+
+.resume:hover {
+  background-color: white;
+  color: var(--secondary);
+}
+
+.name-logo {
+  color: var(--secondary);
+}
+
+.nav-items {
+  display: inline-block;
+  position: relative;
+  color: black;
+}
+
+.nav-items::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--secondary);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.nav-items:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+  margin-left: 1rem;
+}
+
+.br {margin-bottom: 17em}
+/* Flex Direction Max */
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 2rem;
+}
+
+
+/**********/
+.about-me {
+  height: 100%;
+  width: 40rem;
+  margin-top: 10rem;
+}
+.about-me h1 {
+  font-size: 65px;
+}
+
+.about-me p {
+  font-size: 25px;
+}
+
+p a {
+  text-decoration: none;
+  color: var(--secondary);
+}
+
+p a:hover {
+  color: rgb(87, 112, 171);
+}
+
+span {
+  color: var(--secondary);
+}
+.about-section {
+  margin-left: 1rem;
+  height: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+}
+
+.selfie {
+  margin-bottom: 10rem;
+  width: 500px;
+  height: 500px;
+  border-radius: 30% 70% 70% 30% / 30% 31% 69% 70% ;
+}
+
+.background {
+  background-color: var(--secondary);
+  width: 500px;
+  height: 500px;
+  border-radius: 30% 70% 70% 30% / 30% 31% 69% 70% ;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 820px) {
+  .navBar {
+    display: flex;
+    flex-direction: column;
+    border-bottom: none;
+  }
+}
+
+
+
+@media screen and (max-width: 1040px) {
+  .about-section {
+    max-width: 100%;
+    padding-top: 20rem;
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+  }
+  .about-me {
+    position:relative;
+    bottom: 20rem;
+  }
+}
+
+/* Contact Section */
+
+#Contact {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.contact-sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  margin: auto;
+  border: 5px solid var(--secondary);
+  border-radius: 5px;
+}
+
+.contact-sec h2 {
+  color: black;
+}
+.contact-sec h3 {
+  font-size: 55px;
+  color: var(--secondary);
+}
+.contact-sec p {
+  width: 500px;
+  color: black;
+  font-size: 25px;
+  
+}
+
+.contact-sec a {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  flex-direction: column;
+  border: 3px solid var(--secondary);
+  border-radius: 5px;
+  height: 30px;
+  width: 150px;
+  background-color: transparent;
+  color: var(--secondary);
+  font-size: 20px;
+}
+
+.contact-sec a:hover {
+  background-color: var(--secondary);
+}
+
+.contact-sec a span:hover {
+  color: white;
+}
+
+/* Social Side Bars */
+
+  [class^="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+  }
+  #social-sidebar {
+  right: 0;
+  top: 60%;
+  }
+  #social-sidebar li:first-child a { border-top-right-radius: 5px; }
+  #social-sidebar li:last-child a { border-bottom-right-radius: 5px; }
+  
+  #social-sidebar {
+  list-style: none;
+  }
+  #social-sidebar a {
+  background: white 1;
+  color: var(--buttons);
+  text-decoration: none;
+  display: block;
+  height: 50px;
+  width: 50px;
+  font-size: 24px;
+  line-height: 50px;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  }
+ 
+  #social-sidebar a span {
+  font: 12px "Open Sans", sans-serif;
+  text-transform: uppercase;
+  /* shape of the border of th side bars */
+  border-radius: 30px;
+  line-height: 24px;
+  left: -200%;
+  margin-top: -30%;
+  opacity: 0;
+  padding: 4px 8px;
+  position: absolute;
+  transition: opacity .3s, left .4s;
+  top: 50%;
+  z-index: -1;
+  }
+   
+   
+  #social-sidebar a[class*="linkedin"]:hover,
+  #social-sidebar a[class*="linkedin"] span,
+  #social-sidebar a[class*="linkedin"] span:before {background: #00aced;}
+   
+   
+  #social-sidebar a[class*="gplus"]:hover,
+  #social-sidebar a[class*="gplus"] span,
+  #social-sidebar a[class*="gplus"] span:before {background: #E34429;}
+   
+   
+  #social-sidebar a[class*="github"]:hover,
+  #social-sidebar a[class*="github"] span,
+  #social-sidebar a[class*="github"] span:before {background: #9C7A5B;}
+  
+  #social-sidebar a[class*="insta"]:hover,
+  #social-sidebar a[class*="insta"] span,
+  #social-sidebar a[class*="insta"] span:before {background: #ea4c89;}
+  
+  /* Add icon that you want, the content code is available in the demo above*/
+  
+  .entypo-linkedin:before {
+  content: '\f318';
+  }
+  
+  .entypo-gplus:before {
+  content: '\2709';
+  }
+  .entypo-github:before {
+  content: '\f300';
+  }
+  .entypo-insta:before {
+  content: '\f32d';
+  }
+  @font-face {
+  font-family: 'entypo';
+  font-style: normal;
+  font-weight: normal;
+  src: url('https://weloveiconfonts.com/api/fonts/entypo/entypo.eot');
+  src: url('https://weloveiconfonts.com/api/fonts/entypo/entypo.eot?#iefix') format('eot'),
+  url('https://weloveiconfonts.com/api/fonts/entypo/entypo.woff') format('woff'),
+  url('https://weloveiconfonts.com/api/fonts/entypo/entypo.ttf') format('truetype'),
+  url('https://weloveiconfonts.com/api/fonts/entypo/entypo.svg#entypo') format('svg');
+  }
+
+
+  /*Projects to display*/
+
+  .newProj {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  .proj-sec {
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding-left: 0.0rem;
+    padding-right: 2.5rem;
+    top: -5rem;
+  }
+  
+  .projects-grid {
+    display: grid;
+    gap: 2rem;
+  }
+
+@media (min-width: 768px) {
+
+    .projects-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    
+}
+
+.new-projects {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+  border-radius: 0.75rem;
+  display: inline-block;
+}
+
+.new-projects img {
+  border-radius: 0.75rem;
+  width: 80%;
+  height: 80%;
+  position: relative;
+  border: 2px solid var(--secondary);
+  opacity: 0.9;
+}
+
+.new-projects:hover .overlay {
+  opacity: 0.0;
+}
+
+.new-projects:hover .desp-proj {
+  opacity: 1;
+  transform: rotate(0deg) scale(1.1);
+  transform-origin: bottom center;
+  transition: 0.5s;
+}
+
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  color: rgb(255, 255, 255,1);
+}
+
+.overlay {
+  position: relative;
+  border-radius: 0.75rem;
+  border: 3px solid var(--secondary);
+  left: 0.01%;
+  bottom: 81%;
+  height: 79%;
+  width: 79.5%;
+  opacity: 0.6;
+  z-index: 1;
+  transition: .5s ease;
+  background-color: var(--secondary);
+  overflow: hidden;
+}
+
+.desp-proj {
+  position: relative;
+  align-items: center;
+  text-align: center;
+  border-radius: 0.75rem;
+  background-color: rgb(128, 128, 128,0.9);
+  bottom: 140%;
+  left: 16%;
+  width: 50%;
+  opacity: 0;
+  z-index: 1;
+  transition: .5s ease;
+  color: white;
+}
+.desp-proj .git {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 0.5rem;
+  left: 0.2rem;
+  border: none;
+}
+
+@media only screen and (max-device-width: 823px) {
+  .desp-proj .git{display:none;}
+}
+
+.desp-proj a {
+  text-decoration: none;
+  color: red;
+}
+
+.title-proj {
+  font-size: 30px;
+  font-family:monospace;
+  margin-left: 1rem;
+  padding-top: 8rem;
+}
+
+.built {
+  margin-left: 1rem;
+  color: var(--secondary);
+  font-size: 50px;
+}
+
