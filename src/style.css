@@ -382,14 +382,6 @@ ul li a {
     margin-left: 5rem;
     margin-top: 2rem;
   }
-  @media (min-width: 415px) {
-
-    .proj-sec {
-      position: relative;
-      left: 5rem;
-    }
-    
-}
 
   .proj-sec {
     max-width: 1240px;
@@ -469,11 +461,20 @@ ul li a {
   background-color: var(--secondary);
   overflow: hidden;
 }
-@media screen and (max-width: 375px) {
+
+@media (min-width: 415px) {
+
+  .proj-sec {
+    position: relative;
+    left: 8rem;
+    top: 3rem;
+  }
+
   .overlay{
     height: 79.3%;
     bottom: 81.5%;
   }
+  
 }
 
 .desp-proj {
