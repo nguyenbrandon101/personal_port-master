@@ -219,6 +219,13 @@ ul li a {
 
 /* Contact Section */
 
+@media screen and (max-width: 550px) {
+  .contact-sec {
+    position: relative;
+    top: 5rem;
+    left: 4rem;
+  }
+}
 #Contact {
   width: 100vw;
   height: 100vh;
@@ -453,6 +460,11 @@ ul li a {
   background-color: var(--secondary);
   overflow: hidden;
 }
+@media screen and (max-width: 375px) {
+  .overlay{
+    height: 79.3%;
+  }
+}
 
 .desp-proj {
   position: relative;
@@ -477,9 +489,6 @@ ul li a {
   border: none;
 }
 
-@media only screen and (max-device-width: 823px) {
-  .desp-proj .git{display:none;}
-}
 
 .desp-proj a {
   text-decoration: none;
