@@ -158,8 +158,6 @@ ul li a {
   }
 }
 
-
-
 @media screen and (max-width: 1040px) {
   .about-section {
     max-width: 100%;
@@ -173,6 +171,51 @@ ul li a {
     bottom: 20rem;
   }
 }
+
+@media screen and (max-width: 695px) {
+  .about-me{
+    position:relative;
+    left: 1rem;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .about-me{
+    position:relative;
+    left: 1rem;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .selfie {
+    position: relative;
+    left: 5rem;
+  }
+  .about-me{
+    position:relative;
+    left: 8rem;
+  }
+}
+@media screen and (max-width: 395px) {
+  .about-section {
+    position: relative;
+    top: 3rem;
+  }
+  .selfie {
+    position: relative;
+    left: 7rem;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .about-section {
+    position: relative;
+    top: 8rem;
+  }
+}
+
+
+
 
 /* Contact Section */
 
@@ -329,6 +372,7 @@ ul li a {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    margin-left: 5rem;
   }
 
   .proj-sec {
