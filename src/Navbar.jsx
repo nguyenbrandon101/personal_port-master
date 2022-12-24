@@ -9,7 +9,7 @@ export default function Navbar(){
         </a>
         <ul>
             <li>
-                <Link className="nav-items" to='/newproj'>Projects</Link>
+                <Link className="nav-items" to='/proj'>Projects</Link>
             </li>
             <li>
                 <Link className="nav-items" to='/contact'>Contact Me</Link>
